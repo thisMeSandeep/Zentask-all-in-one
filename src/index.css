@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-gradient {
+  background-color: #fbab7e;
+  background: linear-gradient(to right, #c94b4b, #4b134f);
+  text-shadow: 10px 10px rgba(0, 0, 0, 0.082);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-gradient-logo {
+  background-color: #fbab7e;
+  background: linear-gradient(to right, #c94b4b, #4b134f);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.nav-box-shadow {
+  box-shadow: inset 2px 2px 4px white;
+}
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.note-box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.underline-offset {
+  text-underline-offset: 6px;
+}
+
+.animate-weather-background {
+  animation: moveBackground 5s ease forwards;
+}
+
+@keyframes moveBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+.neo-card-light {
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+}
+.dark .neo-card-dark {
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+}
+
+/* From Uiverse.io by barisdogansutcu */
+
+.button-light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #7e97b8;
+  background-color: #e0e8ef;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(255, 255, 255, 0.333);
+  border-radius: 40px 40px 40px 40px;
+  padding: 16px 24px 16px 28px;
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: 0.2s;
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+.button-light:hover {
+  color: #516d91;
+  background-color: #e5edf5;
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+.button-light:active {
+  box-shadow: none;
+}
+
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #e9efee #000000b6;
+}
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #f0f4f8;
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #0c95b0;
+  border-radius: 50%;
+  border: 2px solid #f0f4f8;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background-color: #0c95b0;
+  border-radius: 50%;
+}
